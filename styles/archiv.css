@@ -1,0 +1,58 @@
+.archiv {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  border-top: #e0e0e0 2px solid;
+  border-bottom: #e0e0e0 2px solid;
+}
+
+.archiv h2 {
+  font-size: 32px;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.archive-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.archive-item h3 {
+  font-size: 22px;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.archive-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.archive-item li {
+  margin-bottom: 15px;
+}
+
+.archive-item a {
+  color: #3d73cf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.archive-item a:hover {
+  text-decoration: underline;
+}
+
+.archive-item p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0 0 0;
+}

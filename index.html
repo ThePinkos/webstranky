@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styl.css" />
+    <link rel="stylesheet" href="styles/archiv.css" />
+    <link rel="stylesheet" href="styles/kontakt.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/oblasti.css" />
     <title>SOČ</title>
   </head>
   <body>
     <!--Názov-->
-    <h1>Stredoškolská odborná činnosť</h1>
+    <header>
+      Gymnázium, Veľká okružná 22, Žilina
+      <img src="gvoza.png" alt="logo" />
+    </header>
 
     <!--Obsah-->
-    <h2>Čo je SOČ?</h2>
+    <h1>Čo je <span class="soc">SOČ</span>?</h1>
     <p>
       Súťažná prehliadka tvorivej a odbornej činnosti študentov. Pokiaľ vieš
       veľa o určitej vednej oblasti a venuješ sa skúmanie konkrétneho problému v
@@ -22,42 +28,94 @@
       Súťaže sa môže zúčastniť každý študent nášho gymnázia, prípadne dvojica
       študentov. Prácu prezentuje jeden člen tímu.
     </p>
-    <h2>Ako SOČ prebieha</h2>
 
     <!--Oblasti-->
-    <h2>Oblasti súťažnej prehliadky</h2>
-    <p>Súťažiť môžeš v jednej z nasledujúcich oblastí:</p>
+    <h2>Oblasti, v ktorých môžeš sútažiť:</h2>
 
     <div class="oblasti">
-      <div class="box">Matematika, fyzika</div>
-      <div class="box">Chémia, potravinárstvo</div>
-      <div class="box">Biológia</div>
-      <div class="box">Životné prostredie, geografia, geológia</div>
-      <div class="box">Informatika</div>
-      <div class="box">Elektrotechnika a hardware</div>
-      <div class="box">História, filozofia, právne vedy</div>
-      <div class="box">Teória kultúry, umenie, umelecká, odevná tvorba</div>
-      <div class="box">Ekonomika a riadenie</div>
-      <div class="box">Pedagogika, psychológia, sociológia</div>
-      <div class="box">Tvorba učebných pomôcok, didaktické technológie</div>
-      <div class="box">Problematika voľného času</div>
-      <div class="box">Zdravotníctvo a farmakológia</div>
-      <div class="box">
+      <div>Matematika, fyzika</div>
+      <div>Chémia, potravinárstvo</div>
+      <div>Biológia</div>
+      <div>Životné prostredie, geografia, geológia</div>
+      <div>Informatika</div>
+      <div>Elektrotechnika a hardware</div>
+      <div>História, filozofia, právne vedy</div>
+      <div>Teória kultúry, umenie, umelecká, odevná tvorba</div>
+      <div>Ekonomika a riadenie</div>
+      <div>Pedagogika, psychológia, sociológia</div>
+      <div>Tvorba učebných pomôcok, didaktické technológie</div>
+      <div>Problematika voľného času</div>
+      <div>Zdravotníctvo a farmakológia</div>
+      <div>
         Pôdohospodárstvo (poľnohospodárstvo, lesné a vodné hospodárstvo)
       </div>
-      <div class="box">Cestovný ruch, hotediverstvo, gastronómia</div>
-      <div class="box">Strojárstvo, hutníctvo, doprava</div>
-      <div class="box">Stavebníctvo, geodézia, kartografia</div>
+      <div>Cestovný ruch, hotediverstvo, gastronómia</div>
+      <div>Strojárstvo, hutníctvo, doprava</div>
+      <div>Stavebníctvo, geodézia, kartografia</div>
+    </div>
+
+    <!--Archiv prác-->
+    <section class="archiv">
+      <h2>Archív prác</h2>
+      <div class="archive-grid">
+        <article class="archive-item">
+          <h3>Školský rok 2016/17</h3>
+          <ul>
+            <li>
+              <a href="prace_archiv/2017/trevo.pdf"
+                >Filip Kučerák: Aplikovanie genetického algoritmu do
+                procedurálneho generovania vegetácie</a
+              >
+              <p>
+                2. miesto v okresnom kole, 4. miesto v krajskom kole, obor
+                Informatika
+              </p>
+            </li>
+            <li>
+              <a href="prace_archiv/2017/tudorovci.pdf"
+                >Adam Bielčik: (Ne)Slávni Tudorovci</a
+              >
+              <p>
+                2. miesto v okresnom kole, obor História, filozofia, právne vedy
+              </p>
+            </li>
+            <!-- Add more items as needed -->
+          </ul>
+        </article>
+        <article class="archive-item">
+          <h3>Školský rok 2015/16</h3>
+          <ul>
+            <li>
+              <a href="prace_archiv/2016/SOC_Lazur_Juraj.pdf"
+                >Juraj Lazúr: Separácia odpadu pomocou informačno-komunikačných
+                technológií</a
+              >
+              <p>1. miesto v okresnom kole, obor Informatika</p>
+            </li>
+            <!-- Add more items as needed -->
+          </ul>
+        </article>
+        <!-- Add more articles for other years -->
+      </div>
+    </section>
+
+    <!--Kontakt-->
+    <div class="kontakt">
+      <h3>Kontakt na koordinátora SOČ</h3>
+      <h4>PaedDr. Jana Pekárová, PhD.</h4>
+      <p>
+        Na tvoje otázky rada odpoviem - navštív zborovňu, učebne informatiky
+        alebo napíš e-mail na školskú adresu.
+      </p>
+      <a href="mailto:pekarova@gvoza.sk" class="email">pekarova@gvoza.sk</a>
+      <div class="info">
+        V prípade potreby ti pomôžem s nájdením konzultanta k téme. Pri písaní
+        práce poradím s formálnymi náležitosťami tohto druhu literatúry.
+      </div>
     </div>
 
     <!--Dolna cast-->
     <footer>
-      <nav>
-        <a href="soc.html">Základné informácie</a> |
-        <a href="terminy.html">Termíny</a> |
-        <a href="terminy.html">Prihláška</a> |
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
       &copy; GVOZA tím,
       <a href="mailto:pekarova@gvoza.sk">pekarova@gvoza.sk</a>,
       <a href="mailto:machynova@gvoza.sk">machynova@gvoza.sk</a>
