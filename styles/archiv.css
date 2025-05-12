@@ -1,5 +1,5 @@
 .archiv {
-  padding: 50px 20px;
+  padding: 0 20px 35px;
   background-color: #f4f4f4;
   border-top: #e0e0e0 2px solid;
   border-bottom: #e0e0e0 2px solid;
@@ -8,51 +8,105 @@
 .archiv h2 {
   font-size: 32px;
   color: #004080;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
 }
 
-.archive-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.grid-rokov {
+  column-count: 3;
+  column-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.archive-item {
+.skolsky-rok {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
   padding: 20px;
 }
 
-.archive-item h3 {
+.skolsky-rok h3 {
   font-size: 22px;
   color: #004080;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-.archive-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.archive-item li {
-  margin-bottom: 15px;
-}
-
-.archive-item a {
+/* Meno, nazov SOČ*/
+.skolsky-rok h4 {
   color: #3d73cf;
   text-decoration: none;
   font-weight: bold;
 }
 
-.archive-item a:hover {
+.skolsky-rok a {
+  color: #3d73cf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skolsky-rok i {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #4c87a39c;
+}
+
+.skolsky-rok ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skolsky-rok li {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.skolsky-rok li h4 {
+  font-size: 16px;
+  color: #3d73cf;
+  margin-bottom: 10px;
+}
+
+.skolsky-rok li p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+.skolsky-rok li i {
+  display: block;
+  font-size: 14px;
+  color: #4c87a39c;
+  margin-top: 5px;
+}
+
+.skolsky-rok a:hover {
   text-decoration: underline;
 }
 
-.archive-item p {
+.skolsky-rok p {
   font-size: 16px;
   color: #555;
   margin: 5px 0 0 0;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .grid-rokov {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 620px) {
+  .grid-rokov {
+    column-count: 1;
+  }
 }
