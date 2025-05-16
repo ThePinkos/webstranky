@@ -1,22 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<template>
+  <div class="nadpis">
+    <h1 class="soc">Stredoškolská odborná činnosť</h1>
+    <p>
+      Súťažná prehliadka tvorivej a odbornej činnosti študentov. Pokiaľ vieš
+      veľa o určitej vednej oblasti a venuješ sa skúmanie konkrétneho problému v
+      tejto oblasti, je to súťaž práve pre teba.
+    </p>
+    <h2>Pre koho je určená</h2>
+    <p>
+      Súťaže sa môže zúčastniť každý študent nášho gymnázia, prípadne dvojica
+      študentov. Prácu prezentuje jeden člen tímu.
+    </p>
+  </div>
+</template>
 
-html {
-  scroll-behavior: none;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.7;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
+<style>
 .nadpis {
   background-color: #f4f4f4;
   border-top: #e0e0e0 1px solid;
@@ -55,3 +53,4 @@ p {
   font-size: 18px;
   color: #555;
 }
+</style>

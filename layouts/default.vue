@@ -1,3 +1,24 @@
+<template>
+  <header>
+    <div>
+      <a href="/"><span>Gymnázium, Veľká okružná 22, Žilina</span></a>
+    </div>
+    <nav>
+      <a href="#oblasti">Oblasti</a>
+      <a href="#archiv">Archív prác</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+  <div>
+    <slot />
+  </div>
+  <footer>
+    &copy; GVOZA tím,
+    <a href="mailto:pekarova@gvoza.sk">pekarova@gvoza.sk</a>
+  </footer>
+</template>
+
+<style scoped>
 header {
   background-color: #004080;
   padding: 20px 60px;
@@ -59,3 +80,21 @@ header nav a:hover {
 header nav a:hover::after {
   width: 100%;
 }
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>

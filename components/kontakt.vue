@@ -1,3 +1,20 @@
+<template>
+  <div id="kontakt" class="kontakt">
+    <h3>Kontakt na koordinátora SOČ</h3>
+    <h4>PaedDr. Jana Pekárová, PhD.</h4>
+    <p>
+      Na tvoje otázky rada odpoviem - navštív zborovňu, učebne informatiky alebo
+      napíš e-mail na školskú adresu.
+    </p>
+    <a href="mailto:pekarova@gvoza.sk" class="email">pekarova@gvoza.sk</a>
+    <div class="info">
+      V prípade potreby ti pomôžem s nájdením konzultanta k téme. Pri písaní
+      práce poradím s formálnymi náležitosťami tohto druhu literatúry.
+    </div>
+  </div>
+</template>
+
+<style scoped>
 .kontakt {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -60,3 +77,4 @@
   color: #777;
   font-style: italic;
 }
+</style>
