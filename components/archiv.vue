@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import data from "public/archiv.json";
+import data from "~/assets/archiv.json";
 
 const tableData = Object.entries(data).map(([rok, items]) => ({
   rok,
